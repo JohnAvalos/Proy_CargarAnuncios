@@ -1,0 +1,23 @@
+body
+{
+    background-color:rgba(95, 56, 170, 0.48);
+}
+
+.mg-50
+{
+    margin-top: 50px;
+}
+
+.title
+{
+    font-size: 19px;
+    
+    
+}
+
+.border-pro
+{
+    border: 3px solid rgba(0, 0, 0, 0.33) ;
+    border-radius: 10px;
+    padding: 20px 20px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pro Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/game.png" /> 
+</head>
+<body>
+    <h4 class="text-center">Videojuegos Pro</h4>
+    <header class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/game.png" alt="game" class="game">Pro Game</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right menu-principal">
+                <li ><a href="index.html" ><span class="fa fa-home fa-lg"></span> Inicio </a></li>
+                <li><a href="plataforma.html"><span class="fa fa-list fa-lg"></span> Plataformas </a></li>
+                <li ><a href="video.html"><span class="fa fa-play-circle fa-lg"></span> Videos </a></li>
+                <li class="active"><a href="contacto.html"><span class="fa fa-comment fa-lg"></span> Contacto </a></li>
+              </ul>
+            </div>
+      </div>
+    </header>
+    <div class="container pad-top-20">
+        <div class="row">
+           <div class="col-md-8">
+               <!-- un formulario -->
+               <h3 class="text-center">Formulario de Consulta</h3>
+               <form action="resultado.php" class="form form-horizontal" id="formGame" method="post" target="_blank">
+                        <div class="form-group text-left">
+                              <label for="Nombre" class="control-label col-lg-2  text-left">Nombre:*</label>
+                              <div class="col-lg-10 ">
+                                <input type="text" class="form-control input border-black name" placeholder="Introduce tu nombre" name="nombre" id="Nombre">
+                                <span class="error error_name"></span>
+                              </div>
+                        </div>
+                        <div class="form-group text-left">
+                          <label for="correo" class="control-label col-lg-2 text-left">Correo:*</label>
+                          <div class="col-lg-10">
+                            <input type="text" class="form-control input border-black correo" placeholder="Introduce tu correo" name="txtCorreo" id="correo">
+                            <span class="error error_email"></span>
+                          </div>
+                        </div>
+                        <div class="form-group text-left">
+                            <label for="edad" class="control-label col-lg-2 text-left">Edad:*</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control input border-black edad" placeholder="Introduce tu edad" maxlength="2" name="txtEdad" id="edad">
+                                <span class="error error_edad"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                          <label for="observaciones" class="control-label col-lg-2  text-right">Observaciones:*</label>
+                          <div class="col-lg-10 ">
+                             <textarea name="observaciones" id="observaciones" class="form-control input border-black observacion" cols="30" rows="10" placeholder="Introduzca su comentario (max caracteres 50)"></textarea>
+                             <span class="error error_observacion"></span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-lg-8 col-lg-offset-2 text-center">
+                            <input type="submit"  name="enviar"  value="Enviar" class="btn btn-primary btn-lg boton"/>
+                          </div>
+                        </div>
+               </form>
+           </div>
+            <div class="col-md-4 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.026772847681!2d-3.6428674850664104!3d40.43040606273235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f6a189c857d%3A0x7e5756e9d985b47d!2sEstacion+de+Servicio+Emilio+Ferrari%2C+SA!5e0!3m2!1ses!2ses!4v1455608443316"  class="img-responsive img-grande" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+        <div class="clearfix visible-lg-block "></div>
+       <footer class="footer">
+          <div class="container">
+             <div class="row">
+                <div class="col-md-12 col-sm-12  text-center">
+                   <p>Pagina web para los amantes de los videojuegos<br/>
+                   desarrollado para dar las ultimas novedades y trailers del mundo de los videojuegos.
+                   </p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            Html Validation
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="¡CSS Válido!" />
+                            </a>
+                           <a href="https://www.w3.org/Icons/valid-html401">
+                            Css Validation
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://www.w3.org/Icons/valid-html401"
+                                alt="¡CSS Válido!" />
+                            </a>
+                    
+              </div>
+       </div>
+       </div>
+       </footer>
+        <script src="js/jquery.2.2.0.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+          <script src="js/modValidateForm.js"></script>
+    </body>
+</html>

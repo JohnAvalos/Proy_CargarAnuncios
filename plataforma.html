@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pro Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/game.png" /> 
+    <link rel="stylesheet" href="fancyBox/jquery.fancybox.css">
+</head>
+<body>
+   <h4 class="text-center">Videojuegos Pro</h4>
+    <header class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/game.png" alt="game" class="game">Pro Game</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right menu-principal">
+                <li ><a href="index.html" ><span class="fa fa-home fa-lg"></span> Inicio </a></li>
+                <li class="active"><a href="plataforma.html"><span class="fa fa-list fa-lg"></span> Plataformas </a></li>
+                <li ><a href="video.html"><span class="fa fa-play-circle fa-lg"></span> Videos </a></li>
+                <li><a href="contacto.html"><span class="fa fa-comment fa-lg"></span> Contacto </a></li>
+              </ul>
+            </div>
+      </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+               <div class="gallery">
+                <table class="table table-bordered  colorTable  table-responsive">
+                  <caption>Top Ventas</caption>
+                   <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Ps4</td>
+                        <td><a href="images/ps4.jpg" class="fancybox" rel="gallery"><img src="images/ps4.jpg" alt="ps4" rel="gallery"  class="img-responsive img-respons" title="ps4"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Ps3</td>
+                        <td><a href="images/ps3.jpg" class="fancybox" rel="gallery"><img src="images/ps3.jpg" alt="ps3" rel="gallery" class="img-responsive img-respons" title="ps3"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Xbox One</td>
+                        <td><a href="images/xbox.jpg" class="fancybox" rel="gallery"><img src="images/xbox.jpg" alt="xbox" rel="gallery" class="img-responsive img-respons" title="xbox" ></a></td>
+                    </tr>
+                    <tr>
+                        <td>Nintendo Wi U</td>
+                        <td><a href="images/wiu.jpg" class="fancybox" rel="gallery"><img src="images/wiu.jpg" alt="nintendo wiU"  class="img-responsive img-respons" title="nintendo wiU" ></a></td>
+                    </tr>
+                    <tr>
+                        <td>Ps Vita</td>
+                        <td><a href="images/psvita.jpeg" class="fancybox" rel="gallery"><img src="images/psvita.jpeg" alt="PS VITA" rel="gallery" class="img-responsive img-respons" title="PS VITA" ></a></td>
+                    </tr>
+                     <tr>
+                        <td>PSP</td>
+                         <td><a href="images/psp.png" class="fancybox" rel="gallery"><img src="images/psp.png" alt="PSP" rel="gallery" class="img-responsive img-respons" title="PSP" ></a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div> 
+            </div>
+        </div>
+    </div>
+        <div class="clearfix visible-lg-block "></div>
+       <footer class="footer">
+          <div class="container">
+             <div class="row">
+                <div class="col-md-12 col-sm-12  text-center">
+                   <p>Pagina web para los amantes de los videojuegos<br/>
+                   desarrollado para dar las ultimas novedades y trailers del mundo de los videojuegos.
+                   </p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            Html Validation
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                alt="¡CSS Válido!" />
+                            </a>
+                           <a href="https://www.w3.org/Icons/valid-html401">
+                            Css Validation
+                            <img style="border:0;width:88px;height:31px"
+                                src="https://www.w3.org/Icons/valid-html401"
+                                alt="¡CSS Válido!" />
+                            </a>
+                    
+              </div>
+       </div>
+       </div>
+       </footer>
+        <script src="js/jquery.2.2.0.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+        <script src="fancyBox/jquery.fancybox.js"></script>
+         <script>
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    overlayColor:"#797e79",
+                    overlayOpacity: .6,
+                    transitionIn: "elastic",
+                    transitionIn: "elastic",
+                    titlePosition: "outside",
+                    cyclic: true
+                });
+
+
+            });
+        </script>
+    </body>
+</html>
